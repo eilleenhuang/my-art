@@ -21,6 +21,36 @@ html, body {
   font-family: "Times New Roman", serif;
   color: #000;
 }
+/* 展覽內容區 */
+.exhibition {
+  padding: 120px 80px;
+  background: #fff;
+}
+
+.exhibition h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.statement {
+  max-width: 600px;
+  line-height: 1.8;
+  margin-bottom: 80px;
+}
+
+/* 作品牆 */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
 
 
 
