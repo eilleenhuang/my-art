@@ -1,37 +1,9 @@
-/* 重置 */
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-/* 封面整頁 */
 .cover {
   height: 100vh;
-  width: 100vw;
-
-  /* 你的純圖片封面 */
-  background-image: url("images/cover.jpg");
+  background: url("./images/cover.jpg") no-repeat center center;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  /* 讓名字可以定位 */
-  position: relative;
+  display: flex;
+  align-items: center;
 }
 
-/* 左側藝術家名字 */
-.artist-name {
-  position: absolute;
-  left: 60px;
-  top: 50%;
-  transform: translateY(-50%);
-
-  font-size: 48px;
-  letter-spacing: 4px;
-  line-height: 1.2;
-
-  color: #111;
-  font-family: serif;
-}
 
