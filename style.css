@@ -49,14 +49,19 @@ html, body {
 /* 作品圖列 */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 }
+
 
 /* 圖片 */
 .gallery img {
   width: 100%;
   height: auto;
+}
+.gallery img {
+  width: 100%;
+  display: block;
 }
 
 
