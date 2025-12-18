@@ -77,10 +77,11 @@ body {
 .hero-text {
   position: relative;
   z-index: 2;
-  padding: 60px;
+  padding: 80px;
   color: #fff;
-  max-width: 620px;
+  max-width: 560px;
 }
+
 
 .hero-text h1 {
   font-size: 40px;
@@ -110,4 +111,19 @@ section p {
   max-width: 600px;
   font-size: 14px;
   line-height: 1.8;
+}
+.hero ~ #navbar {
+  background: rgba(255, 255, 255, 0);
+}
+/* ===== ART WORKS GRID ===== */
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 80px;
+}
+
+.works-grid img {
+  width: 100%;
+  display: block;
 }
