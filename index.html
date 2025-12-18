@@ -5,15 +5,16 @@
   <title>Eilleen Huang | Art Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google font -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <!-- 🔴 只留這一行 CSS -->
+  <!-- Main CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+  <!-- NAVBAR -->
   <header id="navbar">
     <div class="nav-name">Eilleen Huang</div>
     <div class="nav-menu">
@@ -23,6 +24,7 @@
     </div>
   </header>
 
+  <!-- HERO -->
   <div class="hero">
     <div class="hero-text">
       <h1>Eilleen Huang</h1>
@@ -33,6 +35,7 @@
     </div>
   </div>
 
+  <!-- ABOUT -->
   <section id="about">
     <h2>About Me</h2>
     <p>
@@ -41,6 +44,7 @@
     </p>
   </section>
 
+  <!-- INSPIRATION -->
   <section id="inspiration">
     <h2>Inspiration</h2>
     <p>
@@ -48,20 +52,21 @@
     </p>
   </section>
 
+  <!-- ART WORKS -->
   <section id="works">
-  <h2>Art Works</h2>
+    <h2>Art Works</h2>
 
-  <div class="works-grid">
-    <img src="images/work1.jpg" alt="Artwork 1">
-    <img src="images/work2.jpg" alt="Artwork 2">
-    <img src="images/work3.jpg" alt="Artwork 3">
-    <img src="images/work4.jpg" alt="Artwork 4">
-    <img src="images/work5.jpg" alt="Artwork 5">
-    <img src="images/work6.jpg" alt="Artwork 6">
-  </div>
-</section>
+    <div class="works-grid">
+      <img src="images/work1.jpg" alt="Artwork 1">
+      <img src="images/work2.jpg" alt="Artwork 2">
+      <img src="images/work3.jpg" alt="Artwork 3">
+      <img src="images/work4.jpg" alt="Artwork 4">
+      <img src="images/work5.jpg" alt="Artwork 5">
+      <img src="images/work6.jpg" alt="Artwork 6">
+    </div>
+  </section>
 
-
+  <!-- JS: navbar scroll effect -->
   <script>
     const navbar = document.getElementById("navbar");
     window.addEventListener("scroll", () => {
