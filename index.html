@@ -1,56 +1,79 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>我的線上美術展</title>
+  <meta charset="UTF-8" />
+  <title>Eilleen Huang — Art Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 字體（很像美術館） -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+  <!-- ===== NAVBAR ===== -->
   <header id="navbar">
-  <div class="nav-left">Eilleen Huang</div>
-  <nav class="nav-right">
-    <a href="#works">Works</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+    <div class="nav-left">Eilleen Huang</div>
+    <nav class="nav-right">
+      <a href="#about">About Me</a>
+      <a href="#inspiration">Inspiration</a>
+      <a href="#works">Art Works</a>
+    </nav>
+  </header>
 
-
-  <!-- 封面 -->
-  <section class="cover">
-    <div class="artist-name">
-      EILLEEN<br>HUANG
+  <!-- ===== HERO / COVER ===== -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Eilleen Huang</h1>
+      <p>Visual Artist</p>
     </div>
-  </section>
+  </div>
 
-  <!-- 展覽內容 -->
-  <section class="exhibition">
-    <h1>我的線上美術展</h1>
-
-    <p class="statement">
-      我的創作圍繞在情緒、記憶與自我認同之間。
-      透過繪畫，我嘗試將內在狀態轉化為可被觀看的形式。
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I explore visual narratives through drawing and mixed media,
+      focusing on emotion, memory, and atmosphere.
     </p>
+  </section>
 
-    <div class="gallery">
-      <img src="images/art1.jpg" alt="作品一">
-      <img src="images/art2.jpg" alt="作品二">
-      <img src="images/art3.jpg" alt="作品三">
+  <!-- ===== INSPIRATION ===== -->
+  <section id="inspiration" class="section">
+    <h2>Inspiration</h2>
+    <p>
+      My work is inspired by museums, quiet spaces, light, and
+      everyday moments.
+    </p>
+  </section>
+
+  <!-- ===== WORKS ===== -->
+  <section id="works" class="section">
+    <h2>Art Works</h2>
+
+    <div class="grid">
+      <div class="art-box"></div>
+      <div class="art-box"></div>
+      <div class="art-box"></div>
+      <div class="art-box"></div>
     </div>
   </section>
-<script>
-  const navbar = document.getElementById("navbar");
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
-    }
-  });
-</script>
-ㄇ
+  <!-- ===== JS：滑動變半透明 ===== -->
+  <script>
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>
+
 </body>
 </html>
 
