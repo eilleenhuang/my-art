@@ -5,7 +5,7 @@
   <title>Eilleen Huang | Art Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- 字體（美術館常用） -->
+  <!-- Museum-style font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
@@ -18,12 +18,12 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      color: #000;
       background: #fff;
-      padding-top: 100px; /* 避開固定選單 */
+      color: #000;
+      padding-top: 100px; /* avoid fixed navbar */
     }
 
-    /* ===== MUSEUM NAVBAR ===== */
+    /* ===== NAVBAR ===== */
     #navbar {
       position: fixed;
       top: 0;
@@ -66,21 +66,32 @@
       opacity: 0.6;
     }
 
-    /* ===== HERO ===== */
+    /* ===== HERO (IMAGE + YOUR WORDS) ===== */
     .hero {
-  height: 100vh;
-  background-image: url("images/cover.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+      height: 100vh;
+      background-image: url("images/cover.jpg");
+      background-size: cover;
+      background-position: center;
 
-  display: flex;
-  align-items: flex-end;
-}
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+    }
 
+    /* dark overlay so text is readable */
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.25);
+    }
 
     .hero-text {
+      position: relative;
+      z-index: 2;
       padding: 60px;
+      color: #fff;
+      max-width: 600px;
     }
 
     .hero-text h1 {
@@ -90,9 +101,9 @@
     }
 
     .hero-text p {
+      margin-top: 14px;
       font-size: 14px;
-      letter-spacing: 2px;
-      margin-top: 8px;
+      line-height: 1.8;
     }
 
     /* ===== SECTIONS ===== */
@@ -117,7 +128,7 @@
 
 <body>
 
-  <!-- ===== NAVBAR ===== -->
+  <!-- NAVBAR -->
   <header id="navbar">
     <div class="nav-name">Eilleen Huang</div>
     <div class="nav-menu">
@@ -127,33 +138,36 @@
     </div>
   </header>
 
-  <!-- ===== HERO ===== -->
+  <!-- HERO -->
   <div class="hero">
     <div class="hero-text">
       <h1>Eilleen Huang</h1>
-      <p>Visual Artist</p>
+      <p>
+        I explore visual narratives through drawing and mixed media,
+        focusing on emotion, memory, and atmosphere.
+      </p>
     </div>
   </div>
 
-  <!-- ===== ABOUT ===== -->
+  <!-- ABOUT -->
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I explore visual narratives through drawing and mixed media,
-      focusing on emotion, memory, and atmosphere.
+      I am interested in how quiet moments, space, and light
+      can be translated into visual language.
     </p>
   </section>
 
-  <!-- ===== INSPIRATION ===== -->
+  <!-- INSPIRATION -->
   <section id="inspiration">
     <h2>Inspiration</h2>
     <p>
-      Museums, quiet spaces, light, and everyday moments
-      strongly influence my work.
+      Museums, architecture, and everyday observations
+      shape the way I create and think.
     </p>
   </section>
 
-  <!-- ===== WORKS ===== -->
+  <!-- WORKS -->
   <section id="works">
     <h2>Art Works</h2>
     <p>
@@ -161,10 +175,9 @@
     </p>
   </section>
 
-  <!-- ===== JS ===== -->
+  <!-- JS -->
   <script>
     const navbar = document.getElementById("navbar");
-
     window.addEventListener("scroll", () => {
       if (window.scrollY > 30) {
         navbar.classList.add("scrolled");
