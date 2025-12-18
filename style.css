@@ -7,9 +7,9 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: #ffffff;
+  background: #fff;
   color: #000;
-  padding-top: 100px; /* 避開 fixed navbar */
+  padding-top: 100px;
 }
 
 /* ===== NAVBAR ===== */
@@ -55,7 +55,7 @@ body {
   opacity: 0.6;
 }
 
-/* ===== HERO（你圖片消失的關鍵在這） ===== */
+/* ===== HERO ===== */
 .hero {
   height: 100vh;
   background-image: url("images/cover.jpg");
@@ -68,7 +68,6 @@ body {
   align-items: flex-end;
 }
 
-/* 半透明遮罩 */
 .hero::before {
   content: "";
   position: absolute;
@@ -76,7 +75,6 @@ body {
   background: rgba(0, 0, 0, 0.25);
 }
 
-/* 你的話 */
 .hero-text {
   position: relative;
   z-index: 2;
