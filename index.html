@@ -49,14 +49,14 @@
     }
 
     .nav-name {
-      font-size: 14px;
-      letter-spacing: 1.5px;
+      font-size: 13px;
+      letter-spacing: 2px;
     }
 
     .nav-menu a {
-      margin-left: 36px;
-      font-size: 11px;
-      letter-spacing: 2px;
+      margin-left: 40px;
+      font-size: 10.5px;
+      letter-spacing: 2.5px;
       text-decoration: none;
       color: #000;
       text-transform: uppercase;
@@ -66,19 +66,20 @@
       opacity: 0.6;
     }
 
-    /* ===== HERO (IMAGE + YOUR WORDS) ===== */
+    /* ===== HERO ===== */
     .hero {
       height: 100vh;
       background-image: url("images/cover.jpg");
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
 
       position: relative;
       display: flex;
       align-items: flex-end;
     }
 
-    /* dark overlay so text is readable */
+    /* dark overlay */
     .hero::before {
       content: "";
       position: absolute;
@@ -91,7 +92,7 @@
       z-index: 2;
       padding: 60px;
       color: #fff;
-      max-width: 600px;
+      max-width: 620px;
     }
 
     .hero-text h1 {
@@ -111,81 +112,4 @@
       padding: 120px 80px;
     }
 
-    section h2 {
-      font-size: 20px;
-      font-weight: 400;
-      letter-spacing: 2px;
-      margin-bottom: 24px;
-    }
-
-    section p {
-      max-width: 600px;
-      font-size: 14px;
-      line-height: 1.8;
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- NAVBAR -->
-  <header id="navbar">
-    <div class="nav-name">Eilleen Huang</div>
-    <div class="nav-menu">
-      <a href="#about">About Me</a>
-      <a href="#inspiration">Inspiration</a>
-      <a href="#works">Art Works</a>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <div class="hero">
-    <div class="hero-text">
-      <h1>Eilleen Huang</h1>
-      <p>
-        I explore visual narratives through drawing and mixed media,
-        focusing on emotion, memory, and atmosphere.
-      </p>
-    </div>
-  </div>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am interested in how quiet moments, space, and light
-      can be translated into visual language.
-    </p>
-  </section>
-
-  <!-- INSPIRATION -->
-  <section id="inspiration">
-    <h2>Inspiration</h2>
-    <p>
-      Museums, architecture, and everyday observations
-      shape the way I create and think.
-    </p>
-  </section>
-
-  <!-- WORKS -->
-  <section id="works">
-    <h2>Art Works</h2>
-    <p>
-      Selected works and ongoing projects will be presented here.
-    </p>
-  </section>
-
-  <!-- JS -->
-  <script>
-    const navbar = document.getElementById("navbar");
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 30) {
-        navbar.classList.add("scrolled");
-      } else {
-        navbar.classList.remove("scrolled");
-      }
-    });
-  </script>
-
-</body>
-</html>
+    sectio
