@@ -1,18 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>TEST</title>
+  <meta charset="UTF-8" />
+  <title>Eilleen Huang | Art Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- 🔴 這一行一定要存在 -->
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- 🔴 只留這一行 CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="test-box">
-    IF YOU SEE A BLACK SCREEN, CSS IS WORKING.
+  <header id="navbar">
+    <div class="nav-name">Eilleen Huang</div>
+    <div class="nav-menu">
+      <a href="#about">About Me</a>
+      <a href="#inspiration">Inspiration</a>
+      <a href="#works">Art Works</a>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Eilleen Huang</h1>
+      <p>
+        My work explores memory, quiet moments, and atmosphere through
+        drawing and mixed media.
+      </p>
+    </div>
   </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am interested in how silence, light, and everyday scenes
+      can be translated into visual language.
+    </p>
+  </section>
+
+  <section id="inspiration">
+    <h2>Inspiration</h2>
+    <p>
+      Museums, quiet spaces, and light strongly influence my work.
+    </p>
+  </section>
+
+  <section id="works">
+    <h2>Art Works</h2>
+  </section>
+
+  <script>
+    const navbar = document.getElementById("navbar");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 30) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>
 
 </body>
 </html>
